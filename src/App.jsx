@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import ScrollTop from './ScrollToTop'
 import Home from "./Components/Pages/Home";
 import Privacy from './Components/Routes/Privacypolicy'
 import About1 from "./Components/Routes/About1";
@@ -40,11 +40,13 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Feedback from "./Components/Pages/Feedback";
 import FeedbackAll from "./Components/Pages/FeedbackAll";
 
+
 function App() {
   const { loginWithRedirect } = useAuth0();
   return (
     <>
       <BrowserRouter>
+      <ScrollTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About1 />} />
@@ -58,14 +60,7 @@ function App() {
           <Route path="/Certificate-generator" element={<Contact1 />} />
           <Route path="/Roast-guru" element={<RoastGuru />} />
           <Route path="/error" element={<ErrorPage />} />
-          <Route
-            path="/signin"
-            render={() => {
-              loginWithRedirect();
-            }}
-          />
-          <Route path="/register" element={<SignUp />} />
-          <Route path="/profile" element={<Profile />} />
+      
 
           <Route path="/EXAM" element={<Test />} />
           <Route path="/EXAM/quiz-week-1" element={<JavaQuiz />} />
@@ -76,34 +71,9 @@ function App() {
           <Route path="/courses/java" element={<Javaprog />} />
           <Route path="/courses/dsa" element={<Dsa />} />
 
-          <Route path="/courses/mern" element={<Mern />} />
-          <Route path="/courses/mern/nodejs" element={<Nodejs />} />
-          <Route path="/courses/mern/express" element={<Express />} />
-          <Route path="/courses/mern/react" element={<Reactjs />} />
-          <Route path="/courses/mern/mongodb" element={<Mongodb />} />
 
-          <Route path="/courses/fullstack" element={<Fullstack />} />
-          <Route path="/courses/fullstack/sql" element={<Mysql />} />
-          <Route path="/courses/fullstack/nodejs" element={<Nodejs />} />
-          <Route path="/courses/fullstack/express" element={<Express />} />
-          <Route path="/courses/fullstack/react" element={<Reactjs />} />
-          <Route path="/courses/fullstack/mongodb" element={<Mongodb />} />
-          <Route
-            path="/courses/fullstack/javascript"
-            element={<Javascript />}
-          />
-          <Route path="/courses/fullstack/html" element={<Html />} />
-          <Route path="/courses/fullstack/css" element={<Css />} />
+       
 
-          <Route path="/cources/programming" element={<Programming />} />
-          <Route path="/cources/programming/java" element={<Javaprog />} />
-          <Route path="/cources/programming/advJava" element={<Advjava />} />
-          <Route
-            path="/cources/programming/javascript"
-            element={<Javascript />}
-          />
-
-          <Route path="/library" element={<ShowBook />} />
           {/* <Route path="/feedback/new" element={<Feedback />} /> */}
           <Route path="/feedback" element={<FeedbackAll />} />
 

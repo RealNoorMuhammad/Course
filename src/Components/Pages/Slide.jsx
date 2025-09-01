@@ -22,7 +22,7 @@ export default function Slide() {
   <h6 className="text-warning text-uppercase mb-2 animated slideInDown fw-bold small-text">
                   Escape Wage-Cuckery
                 </h6>
-                <h1 className="display-4 text-white fw-bold animated slideInDown responsive-title">
+                <h1 className="display-4 text-white fw-bold animated slideInDown responsive-title fonts1">
                   Buy $COURSE → Get RICH
                 </h1>
                 <p className="fs-5 text-light mb-3 pb-1 responsive-text">
@@ -34,7 +34,7 @@ export default function Slide() {
                 {/* Contract Address */}
                 <div className="ca-box text-center mb-4">
                   <p className="text-light small fw-bold m-0">
-                    CA: <span className="text-warning">DYSc9LPQmWgRyJGZGXu8JMBDWBYV2tACsRKPkd2qtRz5</span>
+                    CA: <span className="text-warning ">DYSc9LPQmWgRyJGZGXu8JMBDWBYV2tACsRKPkd2qtRz5</span>
                   </p>
                 </div>
 

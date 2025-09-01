@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
         <h2>6. Contact Us</h2>
         <p>
           If you have questions about this totally legit Privacy Policy,  
-          send us a meme instead of an email. Memes > Legal jargon.
+          send us a meme instead of an email. Memes  Legal jargon.
         </p>
       </div>
 

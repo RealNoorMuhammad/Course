@@ -1,3 +1,7 @@
+body{
+    font-family: "Poppins", sans-serif !important;
+}
+
 .page-header {
   background-color: #000000 !important;
 }
@@ -410,7 +414,7 @@
 
 
 .privacy-container {
-  font-family: "Georgia", serif;
+
   background: #fdfaf6;
   color: #333;
   padding: 40px;
@@ -726,6 +730,7 @@
 
 .quiz-list .scam-card:hover {
   background: #fff3d4;
+
   transform: scale(1.03);
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
@@ -838,6 +843,11 @@ text-align: center;
   flex-direction: column;
 }
 
+.uni-container{
+  background-color: none !important;
+}
+
+
 .option-btn {
   margin: 0.4rem 0;
   padding: 0.8rem;
@@ -910,4 +920,19 @@ text-align: center;
 @keyframes blink {
   from { opacity: 1; }
   to { opacity: 0.6; }
+}
+
+
+.loading p {
+  font-weight: bold;
+  position: relative;
+  top: 25px;
+  font-size: 18px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
 }

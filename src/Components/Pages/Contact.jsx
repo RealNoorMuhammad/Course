@@ -16,15 +16,19 @@ export default function CertificateGenerator() {
     setDate(formattedDate);
   }, []);
 
-  const downloadCertificate = () => {
-    if (!name.trim()) return; 
-    html2canvas(certificateRef.current, { scale: 3 }).then((canvas) => {
-      const link = document.createElement("a");
-      link.download = `${name}_COURSE_Certificate.png`;
-      link.href = canvas.toDataURL("image/png");
-      link.click();
-    });
-  };
+const downloadCertificate = () => {
+  if (!name.trim()) return; 
+  html2canvas(certificateRef.current, { 
+    scale: 3,
+    backgroundColor: null // this removes the white background
+  }).then((canvas) => {
+    const link = document.createElement("a");
+    link.download = `${name}_COURSE_Certificate.png`;
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+  });
+};
+
 
   // Handle input change with max 10 chars
   const handleNameChange = (e) => {
