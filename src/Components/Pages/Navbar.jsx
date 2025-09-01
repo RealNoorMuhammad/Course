@@ -17,6 +17,11 @@ export default function Navbar() {
     }, 3000);
   };
 
+  // ✅ Scroll-to-top handler
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "instant" }); // use "smooth" for animation
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark shadow sticky-top p-0 px-3">
@@ -29,7 +34,11 @@ export default function Navbar() {
         </button>
 
         {/* Logo */}
-        <Link to="/" className="navbar-brand d-flex align-items-center px-lg-4">
+        <Link
+          to="/"
+          className="navbar-brand d-flex align-items-center px-lg-4"
+          onClick={scrollToTop}
+        >
           <h2 className="m-0 fw-bold text-danger">$ COURSE</h2>
         </Link>
 
@@ -46,17 +55,17 @@ export default function Navbar() {
         {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
-            <NavLink exact="true" to="/" className="nav-item nav-link">
+            <NavLink exact="true" to="/" className="nav-item nav-link" onClick={scrollToTop}>
               Home
             </NavLink>
-            <NavLink to="/about" className="nav-item nav-link">
+            <NavLink to="/about" className="nav-item nav-link" onClick={scrollToTop}>
               About
             </NavLink>
-            <NavLink to="/Meme-Generator" className="nav-item nav-link">
-             Meme Generator
+            <NavLink to="/Meme-Generator" className="nav-item nav-link" onClick={scrollToTop}>
+              Meme Generator
             </NavLink>
-            <NavLink to="/exam" className="nav-item nav-link">
-             Exam
+            <NavLink to="/exam" className="nav-item nav-link" onClick={scrollToTop}>
+              Exam
             </NavLink>
 
             {/* Dropdown */}
@@ -65,34 +74,34 @@ export default function Navbar() {
                 to="/pages"
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
+                onClick={scrollToTop}
               >
                 Pages
               </NavLink>
               <div className="dropdown-menu fade-down m-0">
-                
-                <NavLink to="/courses" className="dropdown-item">
-               Courses
+                <NavLink to="/courses" className="dropdown-item" onClick={scrollToTop}>
+                  Courses
                 </NavLink>
-                <NavLink to="/team" className="dropdown-item">
+                <NavLink to="/team" className="dropdown-item" onClick={scrollToTop}>
                   Our Team
                 </NavLink>
-                <NavLink to="/testimonial" className="dropdown-item">
+                <NavLink to="/testimonial" className="dropdown-item" onClick={scrollToTop}>
                   Testimonial
                 </NavLink>
-                <NavLink to="/feedback" className="dropdown-item">
+                <NavLink to="/feedback" className="dropdown-item" onClick={scrollToTop}>
                   Feedback
                 </NavLink>
               </div>
             </div>
 
-    <NavLink to="/roast-guru" className="nav-item nav-link">
-        Roast Guru
+            <NavLink to="/roast-guru" className="nav-item nav-link" onClick={scrollToTop}>
+              Roast Guru
             </NavLink>
-            <NavLink to="/Certificate-generator" className="nav-item nav-link">
-          Certificate
+            <NavLink to="/Certificate-generator" className="nav-item nav-link" onClick={scrollToTop}>
+              Certificate
             </NavLink>
 
-            {/* External Links */}
+            {/* External Links (no scroll needed) */}
             <a
               href="https://dexscreener.com/solana/h8mdxqstymmxutdgwsz923hdx3t7gpdnzwad8n2nascf"
               target="_blank"
@@ -176,8 +185,7 @@ export default function Navbar() {
                   </li>
                   <li className="mt-3">
                     <strong>Enter the Circle</strong> <br />
-                    Lifetime access to mentorship, alpha, and the mindset that
-                    prints.
+                    Lifetime access to mentorship, alpha, and the mindset that prints.
                   </li>
                 </ol>
                 <div className="alert alert-warning mt-3">
@@ -199,11 +207,7 @@ export default function Navbar() {
       )}
 
       {/* Toast Notification */}
-      {showToast && (
-        <div className="custom-toast">
-          ✅ Contract address copied!
-        </div>
-      )}
+      {showToast && <div className="custom-toast">✅ Contract address copied!</div>}
     </>
   );
 }
