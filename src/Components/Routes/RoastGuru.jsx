@@ -10,7 +10,7 @@ export default function() {
     <>
 
     <Navbar/>
-    <Header name="Roast-Guru-Leaderboard"/>
+    <Header name="Guru-Leaderboard"/>
     <Contact/>
     <Footer/>
     </>

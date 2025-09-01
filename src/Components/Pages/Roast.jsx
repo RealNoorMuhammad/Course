@@ -159,7 +159,7 @@ export default function ArtistSubmission() {
 
       {/* Leaderboard */}
       <div className="uni-card">
-        <h2 className="uni-header">🎓 Roast Leaderboard</h2>
+        <h2 className="uni-header">🎓 Guru Leaderboard</h2>
         <ol>
           {leaderboard.map((a, i) => (
             <li key={a.id}>#{i + 1} – {a.description} ({a.voteCount} votes)</li>

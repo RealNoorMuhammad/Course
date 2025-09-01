@@ -16,7 +16,7 @@ export default function Service() {
                 <a href="/roast-guru" className="flex-grow-1" >
                   <div className="p-4 h-100 d-flex flex-column">
                     <i className="fa fa-3x fa-fire text-danger mb-4" />
-                    <h5 className="mb-3">Scam Guru Leaderboard</h5>
+                    <h5 className="mb-3">Guru Leaderboard</h5>
                   </div>
                 </a>
               </div>
@@ -28,7 +28,7 @@ export default function Service() {
                 <a href="/Certificate-Generator" className="flex-grow-1" >
                   <div className="p-4 h-100 d-flex flex-column">
                     <i className="fa fa-3x fa-certificate text-success mb-4" />
-                    <h5 className="mb-3">Fake Graduation Certificate</h5>
+                    <h5 className="mb-3"> Graduation Certificate</h5>
                   </div>
                 </a>
               </div>
