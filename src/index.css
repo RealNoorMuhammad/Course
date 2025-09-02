@@ -79,13 +79,17 @@ body{
 
 
 .imagepdf{
-  width: 70%;
+  width: 80%;
+  position: relative;
+  bottom: 10px;
 }
 
 
 @media (max-width: 768px) {
   .imagepdf{
   width: 100%;
+    position: relative;
+  bottom: 20px;
 }
 }
 
@@ -1006,7 +1010,7 @@ text-align: center;
 
 .scroll-indicator {
   position: absolute;
-  bottom:100px;
+  bottom:110px;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
@@ -1046,4 +1050,53 @@ text-align: center;
   0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.6); }
   70% { box-shadow: 0 0 0 15px rgba(255,255,255,0); }
   100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Default desktop order */
+.about-heading {
+  order: 1;
+}
+.about-paragraphs {
+  order: 2;
+}
+.about-image {
+  order: 1;
+}
+.about-text {
+  order: 2;
+}
+
+/* Mobile order change */
+@media (max-width: 767px) {
+  .about-heading {
+    order: 1; /* heading comes first */
+  }
+  .about-image {
+    order: 2; /* image comes second */
+  }
+  .about-paragraphs {
+    order: 3; /* paragraphs come last */
+  }
 }
