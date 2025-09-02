@@ -95,7 +95,7 @@ export default function Navbar() {
             </div>
 
             <NavLink to="/roast-guru" className="nav-item nav-link" onClick={scrollToTop}>
-              Roast Guru
+        Guru Leaderboard
             </NavLink>
             <NavLink to="/Certificate-generator" className="nav-item nav-link" onClick={scrollToTop}>
               Certificate

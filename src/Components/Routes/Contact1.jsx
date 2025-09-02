@@ -10,7 +10,7 @@ export default function() {
     <>
 
     <Navbar/>
-    <Header name="Certificate-Generator"/>
+    <Header name="$COURSE Certificate-Generator"/>
     <Contact/>
     <Footer/>
     </>

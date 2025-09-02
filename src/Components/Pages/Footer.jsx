@@ -32,7 +32,7 @@ export default function Footer() {
               <a className="btn btn-link text-light d-block" href="/Certificate-Generator">Certificate-Generator</a>
               <a className="btn btn-link text-light d-block" href="/Privacy-Policy">Privacy Policy</a>
               <a className="btn btn-link text-light d-block" href="/Meme-Generator">Meme Generator</a>
-              <a className="btn btn-link text-light d-block" href="/roast-guru">Guru Leaderboard</a>
+              <a className="btn btn-link text-light d-block" href="/roast-guru">Guru </a>
             </div>
 
             {/* Contact */}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Header from './Header'
 import { Link } from 'react-router-dom'
 import "/src/assets/css/test.css"
 import Footer from './Footer'
@@ -8,14 +9,9 @@ export default function Test() {
     return (
         <>
             <Navbar />
-            <div className='scam-uni'>
-                <div className='text-center hero-section'>
-                    <h1 className="scam-title">🎓 $COURSE Academy</h1>
-                    <p className="scam-subtitle">
-                        Where memes meet higher education <br />
-                        (and diplomas are printed on MS Paint)
-                    </p>
-                </div>
+               <Header name="$COURSE Academy"/>
+            <div className=''>
+             
 
                 <div className="container d-flex align-items-center justify-content-center">
                     <div className="list-group w-75 m-5 quiz-list">

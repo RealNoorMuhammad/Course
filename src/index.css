@@ -936,3 +936,21 @@ text-align: center;
     opacity: 0.5;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.meme-tagline {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  animation-delay: 0.5s;
+}
