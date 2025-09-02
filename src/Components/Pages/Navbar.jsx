@@ -64,6 +64,9 @@ export default function Navbar() {
             <NavLink to="/Meme-Generator" className="nav-item nav-link" onClick={scrollToTop}>
               Meme Generator
             </NavLink>
+            <NavLink to="/PFP-Generator" className="nav-item nav-link" onClick={scrollToTop}>
+              PFP Generator
+            </NavLink>
             <NavLink to="/exam" className="nav-item nav-link" onClick={scrollToTop}>
               Exam
             </NavLink>

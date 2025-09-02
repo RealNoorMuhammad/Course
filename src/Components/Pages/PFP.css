@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Merriweather", Georgia, serif;
+
+  color: white;
+}
+
+.pfp-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Header */
+.pfp-header {
+ 
+
+}
+
+.pfp-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.pfp-header p {
+  margin-top: 0.5rem;
+  color: #000000;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Main */
+.pfp-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.pfp-upload {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border: 2px solid #600000;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #600000;
+  font-weight: bold;
+}
+
+/* Preview area */
+.pfp-preview {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  max-width: 70vw;
+  max-height: 70vw;
+  margin-bottom: 1.5rem;
+}
+
+.pfp-template {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pfp-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 84%;
+  height: 86%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+
+
+}
+
+/* Button */
+.pfp-btn {
+  padding: 0.8rem 1.5rem;
+  background: #000000;
+  border: none;
+  border-radius: 8px;
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pfp-btn:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+

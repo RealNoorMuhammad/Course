@@ -30,7 +30,7 @@ import Html from "./Components/Course/Html";
 import Css from "./Components/Course/Css";
 import Advjava from "./Components/Course/Advjava";
 import JavaQuiz from "./Components/Quiz/JavaQuiz";
-
+import PFPGenerator from './Components/Routes/PFPGenerator'
 import Test from "./Components/Pages/Test";
 import FullstackQuiz from "./Components/Quiz/FullstackQuiz";
 import JavascriptQuiz from "./Components/Quiz/JavascriptQuiz";
@@ -52,7 +52,11 @@ function App() {
           <Route path="/about" element={<About1 />} />
           <Route path="/courses" element={<Courses1 />} />
  <Route path="/Privacy-Policy" element={<Privacy />} />
-       
+    
+
+
+     
+        <Route path="/PFP-Generator" element={<PFPGenerator />} />
     <Route path="/Meme-Generator" element={<MemeGenerator />} />
       
           <Route path="/team" element={<Team1 />} />

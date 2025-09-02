@@ -13,7 +13,7 @@ export default function Slide() {
         <div className="carousel-inner course top">
           {/* First Slide */}
           <div className="carousel-item active">
-            <div className="d-flex align-items-center justify-content-center text-center w-100 vh-100 bg-gradient-primary">
+            <div className="d-flex align-items-center justify-content-center text-center w-100 vh-100 bg-gradient-primary position-relative">
               <div className="p-4">
                 <span className="push-down">
                   <h6 className="text-warning text-uppercase mb-2 animated slideInDown fw-bold small-text">
@@ -25,13 +25,12 @@ export default function Slide() {
 
                   {/* Meme Tagline */}
                   <h5 className="text-light fw-bold fst-italic mb-3 animated bounceIn meme-tagline">
-                     Just Buy My Course 
+                    Just Buy My Course
                   </h5>
 
                   <p className="fs-5 text-light mb-3 pb-1 responsive-text">
                     Stop clocking in. Stop being broke. <br />
                     $COURSE is your ticket out of 9–5 slavery. <br />
-                    Apes together RICH 
                   </p>
 
                   {/* Contract Address */}
@@ -69,12 +68,17 @@ export default function Slide() {
                   </Link>
                 </div>
               </div>
+
+              {/* 🔽 Scroll Button */}
+              <div className="scroll-indicator">
+                <span></span>
+              </div>
             </div>
           </div>
 
           {/* Second Slide */}
           <div className="carousel-item">
-            <div className="d-flex align-items-center justify-content-center text-center w-100 vh-100 bg-gradient-dark">
+            <div className="d-flex align-items-center justify-content-center text-center w-100 vh-100 bg-gradient-dark position-relative">
               <div className="p-4">
                 <span className="push-down">
                   <h6 className="text-info text-uppercase mb-2 animated slideInDown fw-bold small-text">
@@ -86,7 +90,7 @@ export default function Slide() {
 
                   {/* Meme Tagline */}
                   <h5 className="text-warning fw-bold fst-italic mb-3 animated bounceIn meme-tagline">
-                  →   Just Buy My Course 
+                    Just Buy My Course
                   </h5>
 
                   <p className="fs-5 text-light mb-3 pb-1 responsive-text">
@@ -129,6 +133,11 @@ export default function Slide() {
                     />
                   </Link>
                 </div>
+              </div>
+
+              {/* 🔽 Scroll Button */}
+              <div className="scroll-indicator">
+                <span></span>
               </div>
             </div>
           </div>
